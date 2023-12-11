@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: #f3e6fa;
+  background-image: url("assets/images/background-pattern-mobile.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (min-width: 640px) {
+  body {
+    background-image: url("assets/images/background-pattern-desktop.svg");
+    background-position: 0 -10vh;
+  }
+}
+body .container {
+  max-width: 570px;
+}
+@media (min-width: 640px) {
+  body .container {
+    transform: translateY(-35px);
+  }
+}
+body .container .star-img {
+  width: 25px;
+}
+@media (min-width: 640px) {
+  body .container .star-img {
+    width: 40px;
+  }
+}
+body .container .faq-text {
+  font-size: 2rem;
+  font-weight: 800;
+}
+@media (min-width: 640px) {
+  body .container .faq-text {
+    font-size: 3rem;
+  }
+}
+body .container .question .question-text {
+  line-height: 18px;
+  width: 85%;
+}
+body .container .question .label1 .plus-img,
+body .container .question .label2 .plus-img,
+body .container .question .label3 .plus-img,
+body .container .question .label4 .plus-img {
+  min-width: 25px;
+}
+body .container .question .label1:hover,
+body .container .question .label2:hover,
+body .container .question .label3:hover,
+body .container .question .label4:hover {
+  cursor: pointer;
+}
+body .container .question:hover {
+  cursor: pointer;
+  color: #d17cff;
+}
+body .container .answer {
+  color: #8c6991;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.8;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+body .attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #8c6991;
+}
+body .attribution a {
+  color: #2f1533;
+  font-weight: 600;
+}
+body .attribution a:hover {
+  text-decoration: underline;
+  color: #d17cff;
+}/*# sourceMappingURL=styles.css.map */

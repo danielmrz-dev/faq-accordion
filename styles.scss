@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+// Variables
+
+$White: #ffffff;
+$Light-pink: #f9f0ff;
+$Grayish-purple: #8c6991;
+$Bg-pink: #f3e6fa;
+$Hover-pink: #d17cff;
+$Dark-purple: #2f1533;
+
+$Work-Sans: 'Work Sans', sans-serif;
+
+// Reset
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $Work-Sans;
+}
+
+body {
+    background-color: $Bg-pink;
+    background-image: url('assets/images/background-pattern-mobile.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (min-width: 640px) {
+        background-image: url('assets/images/background-pattern-desktop.svg');
+        background-position: 0 -10vh;
+    }
+    .container {
+        max-width: 570px;
+        @media (min-width: 640px) {
+            transform: translateY(-35px);
+        }
+        .star-img {
+            width: 25px;
+            @media (min-width: 640px) {
+                width: 40px;
+            }
+        }
+        .faq-text {
+            font-size: 2rem;
+            font-weight: 800;
+            @media (min-width: 640px) {
+                font-size: 3rem;
+            }
+        }
+        .question {
+            .question-text {
+                line-height: 18px;
+                width: 85%;
+            }
+            .label1,
+            .label2,
+            .label3,
+            .label4 {
+                .plus-img {
+                    min-width: 25px;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+                color: $Hover-pink;
+            }
+        }
+        .answer {
+            color: $Grayish-purple;
+            font-size: .9rem;
+            font-weight: 500;
+            opacity: .8;
+            height: 0;
+            overflow: hidden;            
+            transition: .3s ease-in-out;
+        }
+    }
+    .attribution {
+        font-size: .8rem;
+        text-align: center;
+        color: $Grayish-purple;
+        a {
+            color: #2f1533;
+            font-weight: 600;
+            &:hover {
+                text-decoration: underline;
+                color: $Hover-pink;
+            }
+        }
+    }
+}

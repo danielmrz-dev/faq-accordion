@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | FAQ accordion</title>
+</head>
+<body class="flex flex-col sm:h-screen sm:items-center sm:justify-center">
+
+  <main class="container bg-white rounded-lg w-auto mx-7 mt-20 p-5 sm:p-10">
+
+    <div class="faq flex gap-6 pb-3">
+      <img class="star-img" src="assets/images/icon-star.svg" alt="icon-star">
+      <h1 class="faq-text">FAQs</h1>
+    </div>
+
+    <div class="question gap-5 pb-3">      
+      
+      <label for="plus1" class="label1 flex items-center justify-between" onclick="mostrar(0, 0, 'assets/images/icon-minus.svg', '90px')">
+        <h2 class="question-text font-bold">What is Frontend Mentor, and how will it help me?</h2>
+        <img src="assets/images/icon-plus.svg" alt="icon-plus" class="plus-img" id="img-plus1">
+      </label>
+      <input type="checkbox" name="plus" id="plus1" class="hidden">
+      
+    </div>
+    <p class="answer" id="answer1">
+      Frontend Mentor offers realistic coding challenges to help developers improve their
+      frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+      all levels and ideal for portfolio building.
+    </p>
+
+    <hr class="mb-5 mt-2">
+
+    <div class="question gap-5 pb-3">
+      
+      <label for="plus2" class="label2 flex items-center justify-between" onclick="mostrar(1, 1, 'assets/images/icon-minus.svg', '90px')">
+        <h2 class="question-text font-bold">Is Frontend Mentor free?</h2>
+        <img src="assets/images/icon-plus.svg" alt="icon-plus" class="plus-img" id="img-plus2">
+      </label>
+      <input type="checkbox" name="plus" id="plus2" class="hidden">
+
+    </div>
+    <p class="answer" id="answer2">
+      Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+      option providing access to a range of projects suitable for all skill levels.
+    </p>
+
+    <hr class="mb-5 mt-2">
+    
+    <div class="question gap-5 pb-3">
+      
+      <label for="plus3" class="label3 flex items-center justify-between" onclick="mostrar(2, 2, 'assets/images/icon-minus.svg', '90px')">
+        <h2 class="question-text font-bold">Can I use Frontend Mentor projects in my portfolio?</h2>
+        <img src="assets/images/icon-plus.svg" alt="icon-plus" class="plus-img" id="img-plus3">
+      </label>
+      <input type="checkbox" name="plus" id="plus3" class="hidden">
+
+    </div>
+    <p class="answer" id="answer3">
+      Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+      way to showcase your skills to potential employers!
+    </p>
+    
+    <hr class="mb-5 mt-2">
+    
+    <div class="question gap-5 pb-3">
+      <label for="plus4" class="label4 flex items-center justify-between" onclick="mostrar(3, 3, 'assets/images/icon-minus.svg', '90px')">
+        <h2 class="question-text font-bold">How can I get help if I'm stuck on a challenge?</h2>
+        <img src="assets/images/icon-plus.svg" alt="icon-plus" class="plus-img" id="img-plus4">
+      </label>
+      <input type="checkbox" name="plus" id="plus4" class="hidden">
+    </div>
+    <p class="answer" id="answer4">
+      The best place to get help is inside Frontend Mentor's Discord community. There's a help
+      channel where you can ask questions and seek support from other community members.
+    </p>
+
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/danielmrz-dev" target="_blank">danielmrz-dev</a>.
+  </footer>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

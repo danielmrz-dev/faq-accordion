@@ -18,6 +18,7 @@ for (let i = 1; i < 5; i++) {
     checkbox[i - 1] = document.getElementById(`plus${i}`)    
 }
 
+answers[0].style.height = '90px';  
 function mostrar(pergunta, check, source, height) {
     if (checkbox[check].checked) {
         imagens[pergunta].src = source;

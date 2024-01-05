@@ -18,7 +18,12 @@ for (let i = 1; i < 5; i++) {
     checkbox[i - 1] = document.getElementById(`plus${i}`)    
 }
 
-answers[0].style.height = '90px';  
+answers[0].style.height = '90px';
+imagens[0].src = 'assets/images/icon-minus.svg';
+answers[1].style.height = '0';
+answers[2].style.height = '0';
+answers[3].style.height = '0';
+
 function mostrar(pergunta, check, source, height) {
     if (checkbox[check].checked) {
         imagens[pergunta].src = source;
